@@ -10,7 +10,7 @@ function send_mail($to, $subject, $message, $senderName)
 
 // More headers
     $headers .= 'From: ' . $senderName . ' <pawelgasieniec@pawelgasieniec.cba.pl>' . "\r\n";
-    $headers .= 'Cc: Marek Cieciura <cieciura.marek@gmail.com>' . "\r\n";
+    $headers .= 'Bcc: Marek Cieciura <cieciura.marek@gmail.com>' . "\r\n";
     $formattedMessage = formatMail($message, $senderName);
     mail($to, $subject, $formattedMessage, $headers);
     return "Sukces";
