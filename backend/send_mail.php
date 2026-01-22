@@ -38,7 +38,7 @@ function formatMail($message, $senderName)
     return $newMessage;
 }
 $to = $_POST["adres-odbiorcy"];
-$message = $_POST["tresc-maila"];
+$message = $_POST["message"];
 $subject = $_POST["temat-wiadomosci"];
 $senderName = $_POST["nadawca"];
 

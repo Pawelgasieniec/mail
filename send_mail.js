@@ -64,6 +64,7 @@ let $trescMaila = `Zachęcam do odwiedzenia strony https://cieciura.net/to.html 
 dostępnych w zakładce DODATKI.
 Proponuję też zachęcenie swoich znajomych z wykorzystaniem ostatniego widżeta. `
 
-$tematWiadomosci = 'Zachęcam do odwiedzenia strony https://cieciura.net/to.html';
-$('#tresc-maila').text($trescMaila);
-$('#temat-wiadomosci').text($tematWiadomosci);
+let $tematWiadomosci = 'Zachęcam do odwiedzenia strony https://cieciura.net/to.html';
+
+$('#message').text($trescMaila);
+document.getElementById('temat-wiadomosci').value = $tematWiadomosci;
