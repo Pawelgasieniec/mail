@@ -41,8 +41,7 @@ function formatMail($message, $senderName)
     return $newMessage;
 }
 
-//$adminEmail = "cieciura.marek@gmail.com";
-$adminEmail = "pawel.gasieniec@interia.pl";
+$adminEmail = "cieciura.marek@gmail.com";
 $adminName = "Marek Cieciura";
 $serverEmail = "pawel.gasieniec@interia.pl";
 $from = $serverEmail;
