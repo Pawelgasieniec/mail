@@ -3,16 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Zaproszenie</title>
-    <link href="https://edodatki.pl/widgets/contact/style.css?v=1" rel="stylesheet">
-    <link href="https://edodatki.pl/widgets/contact/white.css?v=1" rel="stylesheet">
-    <link href="./style.css" rel="stylesheet">
-
+    <title>Formularz kontaktowy</title>
+    <link href="./css/contact/style.css" rel="stylesheet">
+    <link href="./css/contact/white.css" rel="stylesheet">
 </head>
 
 <body>
 
-<h1>Wysyłanie zachęty</h1>
+<h1>Formularz kontaktowy</h1>
 <form id="message_form">
     <div>
         <label for=nadawca>Imię</label>
@@ -21,18 +19,21 @@
                placeholder="Imię nadawcy"
                required>
 
-        <label for=adres-odbiorcy>Odbiorca</label>
-        <input form="message_form" name="adres-odbiorcy" id="adres-odbiorcy"
+        <label for=adres-nadawcy>Nadawca</label>
+        <input form="message_form" name="adres-nadawcy" id="adres-nadawcy"
                placeholder="uzytkownik@domena.pl"
         >
-
-        <label for=temat-wiadomosci>Temat</label>
-        <input form="message_form" name="temat-wiadomosci" id="temat-wiadomosci"
-               required>
 
         <label for=message>Treść</label>
         <textarea form="message_form" name="message" id="message"
                   required></textarea>
+
+        <div hidden="hidden">
+            <label for=message-type>Treść</label>
+            <textarea form="message_form" name="message-type" id="message-type"
+                      required>kontakt</textarea>
+        </div>
+
         <div style="clear: both;"></div>
         <input type="submit" class="submit" value="Wyślij"
                id="sendMailButton">

@@ -1,0 +1,99 @@
+html {
+    background: transparent;
+}
+
+body {
+    width: 300px;
+    height: 235px;
+    background: transparent url(../../layer.png) no-repeat 0px 0px;
+    font-family: Arial, serif;
+}
+
+body.after {
+    background-position: -300px 0px;
+}
+
+h1 {
+    font: bold 14px Arial;
+    line-height: 30px;
+    margin: 0 40px 10px 10px;
+}
+
+label {
+    width: 80px;
+    margin: 0 10px 0 15px;
+    float: left;
+    clear: left;
+    font: bold 12px Arial;
+    line-height: 20px;
+}
+
+textarea,
+input {
+    border: 1px solid #b4b4b4;
+    float: left;
+    width: 175px;
+    font-size: 12px;
+    padding: 2px;
+    margin-bottom: 7px;
+}
+
+textarea {
+    height: 55px;
+}
+
+.submit {
+    text-align: left;
+    width: 61px;
+    height: 18px;
+    background: transparent url(../../layer.png) no-repeat -600px 0px;
+    font: bold 10px Arial;
+    display: block;
+    clear: both;
+    text-decoration: none;
+    padding-left: 9px;
+    float: right;
+    margin: 10px 20px 0 10px;
+}
+
+.reset {
+    width: 48px;
+    height: 16px;
+    background: transparent url(../../layer.png) no-repeat -600px -18px;
+    font: bold 10px Arial;
+    display: block;
+    text-decoration: none;
+    padding-left: 10px;
+    float: right;
+    margin: 11px 0 0 10px;
+}
+
+.after p {
+    font: bold 10px Arial;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.after p strong {
+    display: block;
+    font: bold 28px Arial;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.after .back {
+    width: 131px;
+    height: 18px;
+    display: block;
+    margin: auto;
+    background: transparent url(../../layer.png) no-repeat -600px -34px;
+    font: bold 10px Arial;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+#message_form > div {
+    width: 300px;
+    overflow: hidden;
+}

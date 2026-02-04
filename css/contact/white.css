@@ -1,0 +1,43 @@
+body {
+    background-position: 0px 0px;
+}
+
+body.after {
+    background-position: -300px 0px;
+}
+
+h1 {
+    color: #000;
+}
+
+label {
+    color: #000;
+}
+
+textarea,
+input {
+    border-color: #b4b4b4;
+}
+
+.submit {
+    background-position: -600px 0px;
+    color: #fff;
+}
+
+.reset {
+    background-position: -600px -18px;
+    color: #5e5e5e;
+}
+
+.after p {
+    color: #000;
+}
+
+.after p strong {
+    color: #b83792;
+}
+
+.after .back {
+    background-position: -600px -34px;
+    color: #fff;
+}

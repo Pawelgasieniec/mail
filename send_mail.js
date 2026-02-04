@@ -1,5 +1,5 @@
-$(document).ready(function() {
-    $('#sendMailForm').submit(function(event) {
+$(document).ready(function () {
+    $('#message_form').submit(function (event) {
         event.preventDefault();
         console.log("Wysyłanie maila");
         setElementVisibility('successSection', false);
@@ -13,7 +13,7 @@ $(document).ready(function() {
             url: 'backend/send_mail.php',
             data: serializedData,
         })
-            .done(function(data) {
+            .done(function (data) {
                 console.log(data);
                 if (data.success) {
 
@@ -21,7 +21,7 @@ $(document).ready(function() {
                 setElementVisibility('successSection', true);
 
             })
-            .fail(function(data) {
+            .fail(function (data) {
                 showError("Próba wysłania wiadomości zakończyła się błędem! Błąd:" + data);
             });
         return false;
@@ -42,7 +42,7 @@ function setElementVisibility(elementId, visible) {
     document.getElementById(elementId).style.display = visible ? 'block' : 'none';
 }
 
-function showError($message){
+function showError($message) {
     console.log($message);
     alert($message);
     setElementVisibility('errorSection', true);
@@ -65,6 +65,10 @@ dostępnych w zakładce DODATKI.
 Proponuję też zachęcenie swoich znajomych z wykorzystaniem ostatniego widżeta. `
 
 let $tematWiadomosci = 'Zachęcam do odwiedzenia strony https://cieciura.net/to.html';
-
-$('#message').text($trescMaila);
-document.getElementById('temat-wiadomosci').value = $tematWiadomosci;
+let messageType = document.getElementById('message-type');
+if (messageType && messageType.textContent === 'zacheta') {
+    $('#message').text($trescMaila);
+}
+if (document.getElementById('temat-wiadomosci')) {
+    document.getElementById('temat-wiadomosci').value = $tematWiadomosci;
+}

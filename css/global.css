@@ -1,10 +1,10 @@
-#edodatki_widget_contact {
+#widget_contact {
     width: 300px;
     position: relative;
     margin: auto;
 }
 
-#edodatki_widget_contact a {
+#widget_contact a {
     position: absolute;
     bottom: 5px;
     left: 8px;
@@ -14,13 +14,13 @@
     text-decoration: none;
 }
 
-#edodatki_widget_contact a.pin {
+#widget_contact a.pin {
     right: 10px;
     top: 7px;
     left: auto;
     width: 12px;
     height: 17px;
-    background: transparent url(logo.png) no-repeat 0 0;
+    background: transparent url(/logo.png) no-repeat 0 0;
     text-indent: -9999px;
     outline: 0;
 }

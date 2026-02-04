@@ -7,10 +7,8 @@
 <body>
 <div id="widget_contact">
     <iframe allowtransparency="true"
-            src="zacheta_iframe.php"
+            src="kontakt_iframe.php"
             style="border:0;width:300px;height:235px;overflow:hidden;" scrolling="no"></iframe>
-    <a href="./kontakt.php" title="Formularz kontaktowy na stronę" class="pin">Formularz kontaktowy
-        na stronę</a>
 </div>
 <script
         src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
